@@ -3,7 +3,7 @@ EMAIL_USER=studentcornerclg@gmail.com
 
 EMAIL_PASS=gpdz pkmb lfpa kapt
 
-#MONGO_URL && PORT
+##MONGO_URL && PORT
 
 PORT=5000
 
