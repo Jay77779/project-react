@@ -1,0 +1,142 @@
+[{
+  "_id": {
+    "$oid": "68cd1395b430b82706d7e0bd"
+  },
+  "name": "Test Student",
+  "age": 18,
+  "email": "student@test.com",
+  "course": "Science",
+  "password": "$2b$10$cHUpbYzV5QB3gQmp9.HBVuTQxKSLXznQub4kBNHtLEWSUhBvBm85y",
+  "phone": "1234567890",
+  "address": "123 Main St",
+  "class": "12",
+  "division": "A",
+  "subjects": [
+    {
+      "name": "Math",
+      "marks": 90,
+      "_id": {
+        "$oid": "68cd1395b430b82706d7e0be"
+      }
+    },
+    {
+      "name": "Physics",
+      "marks": 85,
+      "_id": {
+        "$oid": "68cd1395b430b82706d7e0bf"
+      }
+    },
+    {
+      "name": "Chemistry",
+      "marks": 88,
+      "_id": {
+        "$oid": "68cd1395b430b82706d7e0c0"
+      }
+    }
+  ],
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68cd16534d6737828cae5ef3"
+  },
+  "name": "aaaaaa bbbbbb",
+  "age": 16,
+  "email": "aaaaa@gmail.com",
+  "course": "BCA",
+  "password": "aaa",
+  "phone": "9856425146",
+  "address": "32-swetrajhans",
+  "class": "9",
+  "division": "A",
+  "subjects": [
+    {
+      "name": "Maths",
+      "marks": 45,
+      "_id": {
+        "$oid": "68cd16534d6737828cae5ef4"
+      }
+    },
+    {
+      "name": "Science",
+      "marks": 68,
+      "_id": {
+        "$oid": "68cd16534d6737828cae5ef5"
+      }
+    }
+  ],
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68cd1872d38e8a5da17915a2"
+  },
+  "name": "dddddddd",
+  "age": 21,
+  "email": "dddd@gmail.com",
+  "course": "BBA",
+  "password": "$2b$10$mzfs8UY5oGnK6K0.zrnLPeEe7HVTZpt6Sz209YcrVmIf9rXE07v3q",
+  "phone": "7894561478",
+  "address": "erduo gthgth",
+  "class": "9",
+  "division": "A",
+  "subjects": [
+    {
+      "name": "physio",
+      "marks": 63,
+      "_id": {
+        "$oid": "68cd1872d38e8a5da17915a3"
+      }
+    },
+    {
+      "name": "chemistry",
+      "marks": 56,
+      "_id": {
+        "$oid": "68cd1872d38e8a5da17915a4"
+      }
+    },
+    {
+      "name": "science",
+      "marks": 89,
+      "_id": {
+        "$oid": "68cd1872d38e8a5da17915a5"
+      }
+    }
+  ],
+  "role": "student",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68d0deafd785fad9ea6ca2dc"
+  },
+  "name": "salii jay",
+  "age": 15,
+  "email": "cbdfgr@test.com",
+  "course": "BCOM",
+  "password": "$2b$10$eRLDrN5iwpeDTShNbih1xupELHOJRh21TwJrW3T.cnFxgDvn9Aiva",
+  "phone": "1234567890",
+  "address": "3402-sky walk",
+  "class": "9",
+  "division": "C",
+  "subjects": [
+    {
+      "name": "SS",
+      "marks": 56,
+      "_id": {
+        "$oid": "68d0deb0d785fad9ea6ca2dd"
+      }
+    },
+    {
+      "name": "MATH",
+      "marks": 67,
+      "_id": {
+        "$oid": "68d0deb0d785fad9ea6ca2de"
+      }
+    }
+  ],
+  "role": "student",
+  "__v": 0
+}]

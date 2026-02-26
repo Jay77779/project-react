@@ -1,0 +1,26 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "b18f1b1d-e187-4050-989d-22e3d3b2da15",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1758791183047"
+        }
+      },
+      "favorite": {
+        "name": "127.0.0.1:27017\n"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://127.0.0.1:27017\n/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjoxLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
