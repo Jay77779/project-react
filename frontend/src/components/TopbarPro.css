@@ -1,0 +1,77 @@
+.topbar-pro {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 2.5rem 1.1rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  border-radius: 0 0 18px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+.search-box {
+  background: #f5f7fa;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+}
+.search-icon {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  margin-right: 0.7rem;
+}
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  color: #222;
+  width: 180px;
+}
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.topbar-icon {
+  font-size: 1.25rem;
+  color: #bdbdbd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.topbar-icon:hover {
+  color: #2563eb;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: #f5f7fa;
+  border-radius: 20px;
+  padding: 0.3rem 1rem 0.3rem 0.3rem;
+}
+.user-avatar {
+  background: #ffe082;
+  color: #23272e;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.user-name {
+  font-weight: 600;
+  color: #23272e;
+  font-size: 1.05rem;
+}

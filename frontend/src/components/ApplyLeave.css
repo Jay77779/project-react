@@ -1,0 +1,123 @@
+.apply-leave-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.apply-leave-container h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.apply-leave-desc {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.apply-leave-message {
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.apply-leave-message.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border-left: 4px solid #10b981;
+}
+
+.apply-leave-message.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-left: 4px solid #dc2626;
+}
+
+.apply-leave-form {
+  margin: 0;
+}
+
+.apply-leave-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.apply-leave-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+}
+
+.apply-leave-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.apply-leave-select,
+.apply-leave-input {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: #0f172a;
+  min-width: 140px;
+}
+
+.apply-leave-select:focus,
+.apply-leave-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+.apply-leave-actions {
+  min-width: auto;
+}
+
+.apply-leave-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.apply-leave-btn:hover:not(:disabled) {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+.apply-leave-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .apply-leave-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .apply-leave-group {
+    min-width: 0;
+  }
+
+  .apply-leave-select,
+  .apply-leave-input {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,215 @@
+.teacher-attendance-view {
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+}
+
+.teacher-attendance-view h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  display: none;
+}
+
+.filter-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  border: 1px solid #e8e8e8;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.filter-group label {
+  color: #333;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filter-group input,
+.filter-group select {
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 13px;
+  background: white;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.refresh-btn {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: fit-content;
+}
+
+.refresh-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.attendance-table-wrapper {
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.attendance-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.attendance-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.attendance-table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  color: #333;
+}
+
+.attendance-table tbody tr {
+  transition: background 0.3s ease;
+}
+
+.attendance-table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+.student-name {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.status-badge.status-present {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.status-absent {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.status-leave {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.no-records {
+  text-align: center;
+  padding: 50px 20px;
+  color: #999;
+  font-size: 14px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.error-message {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px 20px;
+  color: #667eea;
+  font-size: 14px;
+}
+
+.record-count {
+  text-align: right;
+  padding: 15px 20px;
+  color: #666;
+  font-size: 13px;
+  border-top: 2px solid #eee;
+  background: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+}
+
+.record-count strong {
+  color: #667eea;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .filter-section {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .attendance-table {
+    font-size: 11px;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    padding: 10px;
+  }
+}
+

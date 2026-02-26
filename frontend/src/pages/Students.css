@@ -1,0 +1,186 @@
+/* Students Container */
+.students-container {
+  padding: 20px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+/* Student Table */
+.student-list-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.student-list-card h2 {
+  margin: 0 0 20px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1200px;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.student-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.student-table td {
+  color: #334155;
+  font-size: 0.875rem;
+}
+
+/* Enhanced table cell styles */
+.student-name {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.student-email {
+  color: #3b82f6;
+  word-break: break-all;
+}
+
+.student-address {
+  max-width: 200px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.subjects-cell {
+  min-width: 200px;
+}
+
+.subjects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.subject-item {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.no-subjects {
+  color: #64748b;
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+/* Actions Column */
+.actions-cell {
+  min-width: 120px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: all 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #2563eb;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+.no-students {
+  text-align: center;
+  padding: 40px 20px;
+  color: #64748b;
+}
+
+.no-students p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .students-container {
+    padding: 16px;
+  }
+  
+  .student-table {
+    min-width: 1000px;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .subject-item {
+    font-size: 0.7rem;
+    padding: 2px 6px;
+  }
+  
+  .student-address {
+    max-width: 150px;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+    margin-right: 4px;
+  }
+}
+

@@ -1,0 +1,61 @@
+.add-subject { margin: 0; }
+.add-subject-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.add-subject-card h2 { margin: 0 0 8px 0; font-size: 22px; color: #333; }
+.add-subject-desc { color: #666; font-size: 14px; margin: 0 0 24px 0; }
+.add-subject .form-group { margin-bottom: 16px; }
+.add-subject .form-group label { display: block; font-weight: 600; color: #374151; margin-bottom: 6px; font-size: 14px; }
+.add-subject select,
+.add-subject input[type="text"] {
+  padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;
+  min-width: 160px;
+}
+.add-subject select:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+.add-subject input[type="text"]:focus {
+  outline: none; border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+.add-subject-filters { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; align-items: flex-end; }
+.add-subject-exam-other {
+  margin-top: 8px;
+  display: block;
+  max-width: 240px;
+}
+.subject-rows-header {
+  display: grid; grid-template-columns: 1fr 44px; gap: 12px; align-items: center;
+  padding: 10px 0; font-weight: 600; font-size: 13px; color: #374151;
+}
+.subject-row {
+  display: grid; grid-template-columns: 1fr 44px; gap: 12px; align-items: center;
+  margin-bottom: 12px;
+}
+.subject-row input[type="text"] {
+  padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;
+}
+.action-col { text-align: center; }
+.remove-row-btn {
+  padding: 8px; border: 1px solid #e5e7eb; background: #fff; border-radius: 8px;
+  color: #6b7280; cursor: pointer;
+}
+.remove-row-btn:hover { background: #fef2f2; color: #dc2626; }
+.add-row-btn {
+  padding: 10px 16px; margin-bottom: 20px;
+  border: 1px dashed #d1d5db; background: #f9fafb; border-radius: 8px;
+  font-size: 14px; color: #6b7280; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+}
+.add-row-btn:hover { background: #f3f4f6; color: #374151; }
+.add-subject-error { color: #dc2626; font-size: 14px; margin: 0 0 12px 0; }
+.add-subject-success { color: #059669; font-size: 14px; margin: 0 0 12px 0; }
+.submit-subject-btn {
+  padding: 10px 24px; background: #2563eb; color: #fff; border: none; border-radius: 8px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.submit-subject-btn:hover:not(:disabled) { background: #1d4ed8; }
+.submit-subject-btn:disabled { opacity: 0.7; cursor: not-allowed; }

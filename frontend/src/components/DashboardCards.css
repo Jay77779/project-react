@@ -1,0 +1,38 @@
+.dashboard-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+.dashboard-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  min-height: 120px;
+  transition: box-shadow 0.2s;
+}
+.dashboard-card:hover {
+  box-shadow: 0 4px 24px rgba(44,62,80,0.13);
+}
+.card-icon {
+  font-size: 2.2rem;
+  color: #bdbdbd;
+}
+.card-icon.gold {
+  color: #ffe082;
+}
+.card-title {
+  font-size: 1.08rem;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+.card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #23272e;
+}

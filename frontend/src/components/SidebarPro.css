@@ -1,0 +1,82 @@
+.sidebar-pro {
+  width: 240px;
+  background: #23272e;
+  color: #fff;
+  min-height: 100vh;
+  padding: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  box-shadow: 2px 0 16px rgba(0,0,0,0.10);
+  border-radius: 18px 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.sidebar-header {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  width: 100%;
+  color: #ffe082;
+  background: none;
+}
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.sidebar-menu li {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.sidebar-menu a, .sidebar-menu button {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 0.9rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.sidebar-menu a:hover, .sidebar-menu button:hover, .sidebar-menu .active a {
+  background: #ffe082;
+  color: #23272e;
+  box-shadow: none;
+  outline: none;
+}
+.sidebar-menu .active a {
+  font-weight: 700;
+}
+.sidebar-logout {
+  color: #e53e3e;
+  font-weight: 600;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  padding: 0.85rem 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-logout:hover {
+  background: #e53e3e;
+  color: #fff;
+}

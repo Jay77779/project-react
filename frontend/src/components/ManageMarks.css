@@ -1,0 +1,240 @@
+.manage-marks { margin: 0; }
+.manage-marks-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.manage-marks-card h2 { margin: 0 0 8px 0; font-size: 22px; color: #333; }
+.manage-marks-desc { color: #666; font-size: 14px; margin: 0 0 24px 0; }
+.manage-marks .form-group { margin-bottom: 18px; }
+.manage-marks .form-group label { display: block; font-weight: 600; color: #374151; margin-bottom: 6px; font-size: 14px; }
+.manage-marks select,
+.manage-marks input[type="text"],
+.manage-marks input[type="number"] {
+  width: 100%; max-width: 320px; padding: 10px 12px;
+  border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;
+}
+.manage-marks select:focus, .manage-marks input:focus {
+  outline: none; border-color: #3b82f6; box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+.manage-marks-hint, .manage-marks-loading, .manage-marks-no-subjects { color: #6b7280; font-size: 14px; margin: 12px 0; }
+.manage-marks-student-info {
+  font-size: 14px; color: #374151; margin: 0 0 16px 0;
+  padding: 10px 12px; background: #f3f4f6; border-radius: 8px;
+}
+.manage-marks-load-exam { margin-bottom: 16px; }
+.manage-marks-load-exam select { max-width: 320px; }
+.form-row { display: flex; gap: 24px; flex-wrap: wrap; margin-bottom: 20px; }
+.form-row .form-group { flex: 1; min-width: 160px; }
+.manage-marks-exam-other {
+  margin-top: 8px;
+  display: block;
+  max-width: 240px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.manage-marks-exam-other:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+.subjects-marks-list {
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  min-width: 320px;
+}
+.subjects-marks-header {
+  display: table-row;
+  font-weight: 600;
+  font-size: 13px;
+  color: #374151;
+}
+.subjects-marks-header span {
+  display: table-cell;
+  padding: 14px 16px;
+  background: #f3f4f6;
+  border-bottom: 2px solid #e5e7eb;
+  vertical-align: middle;
+}
+.subjects-marks-header span:first-child { width: 60%; }
+.subjects-marks-header span:last-child {
+  width: 40%;
+  max-width: 180px;
+  text-align: right;
+  padding-right: 20px;
+}
+.marks-max-hint {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: 12px;
+}
+.subject-marks-row {
+  display: table-row;
+  border-top: 1px solid #e5e7eb;
+}
+.subject-marks-row .subject-name,
+.subject-marks-row .subject-marks-input-wrap {
+  display: table-cell;
+  padding: 12px 16px;
+  vertical-align: middle;
+  border-top: 1px solid #e5e7eb;
+}
+.subject-marks-row .subject-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #111827;
+  width: 60%;
+}
+.subject-marks-row .subject-marks-input-wrap {
+  width: 40%;
+  max-width: 200px;
+  text-align: right;
+}
+.marks-input-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 12px 2px 10px;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  min-height: 40px;
+  box-sizing: border-box;
+}
+.marks-input-box:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+.subject-marks-row input {
+  width: 48px;
+  min-width: 48px;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  text-align: right;
+  color: #111827;
+}
+.subject-marks-row input::placeholder {
+  color: #9ca3af;
+}
+.subject-marks-row input:focus {
+  outline: none;
+}
+.subject-marks-row input::-webkit-outer-spin-button,
+.subject-marks-row input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.subject-marks-row input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.marks-input-suffix {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.subject-marks-row:hover { background: #fafafa; }
+.subject-marks-row:hover .subject-name,
+.subject-marks-row:hover .subject-marks-input-wrap { background: #fafafa; }
+.manage-marks-error { color: #dc2626; font-size: 14px; margin: 0 0 12px 0; }
+.manage-marks-success { color: #059669; font-size: 14px; margin: 0 0 12px 0; }
+.submit-marks-btn {
+  padding: 10px 24px; background: #2563eb; color: #fff; border: none; border-radius: 8px;
+  font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.submit-marks-btn:hover:not(:disabled) { background: #1d4ed8; }
+.submit-marks-btn:disabled { opacity: 0.7; cursor: not-allowed; }
+
+/* Search / View marks box */
+.search-marks-card { margin-top: 32px; }
+.search-marks-filters {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.search-marks-filters .form-group { margin-bottom: 0; }
+.search-marks-filters select { min-width: 160px; }
+.search-marks-result { margin-top: 16px; }
+.search-marks-table-wrap { margin-top: 12px; }
+.search-exam-block {
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.search-exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+.search-exam-title {
+  margin: 0;
+  font-size: 15px;
+  color: #111827;
+}
+.search-exam-actions {
+  display: flex;
+  gap: 8px;
+}
+.btn-edit-exam,
+.btn-delete-exam {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+.btn-edit-exam {
+  background: #2563eb;
+  color: #fff;
+}
+.btn-edit-exam:hover {
+  background: #1d4ed8;
+}
+.btn-delete-exam {
+  background: #dc2626;
+  color: #fff;
+}
+.btn-delete-exam:hover:not(:disabled) {
+  background: #b91c1c;
+}
+.btn-delete-exam:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.search-marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.search-marks-table th,
+.search-marks-table td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 10px 16px;
+  text-align: left;
+}
+.search-marks-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+.search-marks-table tbody tr:last-child td { border-bottom: none; }
+.search-marks-table tbody tr:hover { background: #f9fafb; }

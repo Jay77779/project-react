@@ -1,0 +1,441 @@
+/* Professional login page with left message and modern form */
+.login-page-pro {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2563eb 50%, #f5f7fa 50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left-msg {
+  flex: 1;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 24px 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  min-width: 340px;
+  max-width: 420px;
+  min-height: 420px;
+  box-sizing: border-box;
+}
+.login-left-msg h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.login-left-msg p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.login-form-card-pro {
+  flex: 1;
+  background: #fff;
+  border-radius: 0 24px 24px 0;
+  box-shadow: 0 8px 32px rgba(80, 80, 180, 0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 420px;
+  min-width: 340px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form-card-pro h2 {
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.login-form-card-pro .subtitle {
+  color: #666;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+.role-toggle-pro {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.role-toggle-pro button {
+  background: #f1f5ff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2563eb;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.role-toggle-pro button.active {
+  background: #2563eb;
+  color: #fff;
+}
+.login-form-card-pro form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-form-card-pro label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #222;
+}
+.login-form-card-pro input[type="email"],
+.login-form-card-pro input[type="password"] {
+  margin-bottom: 1.1rem;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.login-form-card-pro input:focus {
+  border: 1.5px solid #2563eb;
+}
+.login-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.1rem;
+}
+.remember-me {
+  font-size: 0.97rem;
+  color: #444;
+}
+.forgot-link {
+  color: #2563eb;
+  font-size: 0.97rem;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+.login-btn-pro {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.login-btn-pro:hover {
+  background: #1741a6;
+}
+.error-msg {
+  color: #e53e3e;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Forgot password dialog (login screen) */
+.forgot-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.forgot-dialog {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.3);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  animation: slideUp 0.25s ease;
+}
+
+.forgot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.forgot-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.forgot-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #6b7280;
+  border-radius: 999px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.forgot-close:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.forgot-desc {
+  padding: 12px 20px 0;
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.forgot-alert {
+  margin: 12px 20px 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.forgot-alert-success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.forgot-alert-error {
+  background: #fef2f2;
+  color: #7f1d1d;
+  border: 1px solid #ef4444;
+}
+
+.forgot-form {
+  padding: 12px 20px 20px;
+}
+
+.forgot-form .form-group {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.forgot-form .form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.forgot-form .form-group input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.forgot-form .form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.forgot-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.forgot-actions .btn-cancel,
+.forgot-actions .btn-save {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.forgot-actions .btn-cancel {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.forgot-actions .btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+.forgot-actions .btn-save {
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+.forgot-actions .btn-save:hover {
+  background: #1d4ed8;
+}
+
+.forgot-actions .btn-save:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.signup-row {
+  margin-top: 1.2rem;
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+}
+.signup-link {
+  color: #2563eb;
+  text-decoration: none;
+  margin-left: 0.2rem;
+  font-weight: 500;
+}
+.signup-link:hover {
+  text-decoration: underline;
+}
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #f5f7fa 50%, #fff 50%);
+  align-items: center;
+  justify-content: center;
+}
+
+.login-illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.login-illustration img {
+  max-width: 90%;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.login-form-card {
+  flex: 1;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(80, 80, 180, 0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  max-width: 400px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.role-toggle {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.role-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4f8cff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.role-toggle button.active {
+  background: #4f8cff;
+  color: #fff;
+}
+
+.login-form-card h2 {
+  margin-bottom: 1.5rem;
+  color: #4f8cff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login-form-card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login-form-card label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #333;
+}
+.login-form-card input {
+  margin-bottom: 1.1rem;
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #e0e7ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.login-form-card input:focus {
+  border: 1.5px solid #4f8cff;
+}
+.forgot-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.1rem;
+}
+.forgot-link {
+  color: #4f8cff;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+.login-btn {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.login-btn:hover {
+  background: #2563eb;
+}
+.error-msg {
+  color: #e53e3e;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-size: 1rem;
+}
