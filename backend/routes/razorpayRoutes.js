@@ -6,7 +6,7 @@ const Fees = require("../models/fees");
 
 const router = express.Router();
 
-const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID || "rzp_test_S66eNWEbdZYzjX";
+const RAZORPAY_KEY_ID = process.env.RAZORPAY_KEY_ID || "enter your key"; # enter your razorypay key 
 const RAZORPAY_KEY_SECRET = process.env.RAZORPAY_KEY_SECRET;
 
 const razorpay = RAZORPAY_KEY_SECRET
@@ -136,3 +136,4 @@ router.post("/verify", authMiddleware(["student"]), async (req, res) => {
 });
 
 module.exports = router;
+
